@@ -1,0 +1,629 @@
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+OrionLib:MakeNotification({
+	Name = "Vryrr",
+	Content = "Welcome to Vryrr",
+	Time = 5
+})
+local Window = OrionLib:MakeWindow({Name = "Vryrr"})
+local Tab = Window:MakeTab({
+	Name = "World",
+	Icon = "",
+	PremiumOnly = false
+})
+Tab:AddButton({
+	Name = "Chat Bypasser",
+	Callback = function()
+            loadstring(game:HttpGet("https://the-shed.dev/scripts/sbp.lua", true))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Oof Spammer",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/JaMbzp0B", true))()
+  	end    
+})
+Tab:AddButton({
+	Name = "TP GUI",
+	Callback = function()
+loadstring(game:HttpGet("https://gist.githubusercontent.com/DagerFild/b4776075a0d26ef04394133ee6bd2081/raw/0ed51ac94057d2d9a9f00e1b037b9011c76ca54a/tpGUI", true))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Grab Tools",
+	Callback = function()
+      	for _,v in pairs(workspace:GetDescendants()) do
+	if v:IsA("Tool") then
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Handle.CFrame
+	end
+end
+
+  	end   
+ })
+Tab:AddButton({
+	Name = "Telekinesis",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/ZCuzD82x", true))()
+  	end    
+})
+Tab:AddButton({
+	Name = "Small Settings",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/AWKUn5Hs", true))()  	end    
+})
+Tab:AddButton({
+	Name = "Empty Server Finder",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/aASY68Ns", true))() 	end    
+})
+Tab:AddLabel("More")
+Tab:AddButton({
+	Name = "VR",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/uZWAvTxC", true))()
+end
+})
+Tab:AddButton({
+	Name = "Easier Obby",
+	Callback = function()
+      	print("coming soon")	   
+end
+})
+Tab:AddButton({
+	Name = "OP Hat GUI",
+	Callback = function()
+loadstring(game:HttpGet("https://ssbtools.netlify.app/assets/storage/LOADSTRING_SCRIPT2.txt"))()
+end
+})
+Tab:AddButton({
+	Name = "Floating Hats",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/4B4fktPS", true))()
+end
+})
+Tab:AddButton({
+	Name = "Giant Hats",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/QsCPxEEC", true))()
+end
+})
+Tab:AddButton({
+            Name = "Drop Hats",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/QsCPxEEC", true))()
+end
+})
+Tab:AddLabel("With Chat")
+Tab:AddButton({
+ Name = "Chat Bypasser",
+	Callback = function()
+      		loadstring(game:HttpGet("https://the-shed.dev/scripts/sbp.lua", true))()
+end
+})
+Tab:AddButton({
+ Name = "Enable Bubble Chat",
+	Callback = function()
+      		game.Chat.BubbleChatEnabled = true
+end
+})
+Tab:AddButton({
+ Name = "Makes Users Chat whatever you want",
+	Callback = function()   		loadstring(game:HttpGet('https://raw.githubusercontent.com/ant-7802/--/main/straightmilk.lua'))()
+end
+})
+Tab:AddButton({
+ Name = "Message Bot",
+	Callback = function()
+      		loadstring(game:HttpGet('https://pastebin.com/raw/6gPZMWaU'))()
+end
+
+})
+local Tab = Window:MakeTab({
+	Name = "Player",
+	Icon = "",
+	PremiumOnly = false
+})
+Tab:AddSlider({
+	Name = "Walkspeed",
+	Min = 0,
+	Max = 1000,
+	Default = 16,
+	Increment = 1,
+	ValueName = "Speed",
+	Callback = function(Value)
+             game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+	end    
+})
+Tab:AddSlider({
+	Name = "Jumppower",
+	Min = 0,
+	Max = 1000,
+	Default = 50,
+	Increment = 1,
+	ValueName = "Power",
+	Callback = function(Value)
+             game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+	end    
+})
+Tab:AddSlider({
+	Name = "Health",
+	Min = 0,
+	Max = 1000,
+	Default = 50,
+	Increment = 1,
+	ValueName = "Health",
+	Callback = function(Value)
+             game.Players.LocalPlayer.Character.Humanoid.Health = Value
+	end    
+})
+
+Tab:AddSlider({
+	Name = "MaxHealth",
+	Min = 0,
+	Max = 1000,
+	Default = 50,
+	Increment = 1,
+	ValueName = "Max",
+	Callback = function(Value)
+             game.Players.LocalPlayer.Character.Humanoid.MaxHealth = Value
+	end    
+})
+Tab:AddButton({
+ Name = "Fly",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/JyzmArqx", true))()
+end
+
+})
+Tab:AddButton({
+ Name = "Noclip",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/DW6ZRWr3", true))()
+end
+
+})
+Tab:AddButton({
+ Name = "God",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/DXGPjdid", true))()
+end
+
+
+})
+Tab:AddButton({
+ Name = "Refill Health",
+	Callback = function()
+      		game.Workspace.Player.LocalPlayer.Character.Humanoid.Health = 100
+end
+
+})
+
+Tab:AddButton({
+ Name = "Reset",
+	Callback = function()
+      game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end
+})
+Tab:AddButton({
+ Name = "Levitate",
+	Callback = function()
+      		  game.Players.LocalPlayer.Character.Humanoid.HipHeight = 3
+end
+
+})
+Tab:AddToggle({
+	Name = "Rotate",
+	Default = true,
+	Callback = function(v)
+	game.Players.LocalPlayer.Character.Humanoid.AutoRotate = v
+	end    
+})
+Tab:AddToggle({
+	Name = "Stand",
+	Default =true,
+	Callback = function(v)
+	game.Players.LocalPlayer.Character.Humanoid.PlatformStand = v
+	end    
+})
+Tab:AddButton({
+ Name = "Netless Bypass",
+	Callback = function()
+      		  loadstring(game:HttpGet("https://pastebin.com/raw/DUc29mew", true))()
+end
+
+})
+Tab:AddLabel("More")
+Tab:AddButton({
+ Name = "Spiderman",
+	Callback = function()   	loadstring(game:HttpGet(('https://raw.githubusercontent.com/ItsDishan/SpidermanScript/main/Spider-Man'), true))()
+end
+})
+Tab:AddButton({
+ Name = "Walk On Walls",
+	Callback = function()
+      		 loadstring(game:HttpGet("https://pastebin.com/raw/5T7KsEWy", true))()
+end
+})
+Tab:AddSlider({
+	Name = "Hip Height",
+	Min = 0,
+	Max = 1000,
+	Default = 50,
+	Increment = 1,
+	ValueName = "Height",
+	Callback = function(Value)
+             game.Players.LocalPlayer.Character.Humanoid.HipHeight = Value
+	end    
+})
+Tab:AddSlider({
+	Name = "Health Distance",
+	Min = 0,
+	Max = 1000,
+	Default = 50,
+	Increment = 1,
+	ValueName = "Height",
+	Callback = function(Value)
+             game.Players.LocalPlayer.Character.Humanoid.HealthDisplayDistance = Value
+	end    
+})
+
+Tab:AddButton({
+ Name = "Visible Name",
+	Callback = function()
+      		game.Workspace.Player.LocalPlayer.Character.Humanoid.NameDisplayDistance = 1000000000000000000000000000000000000000000000000
+end
+})
+Tab:AddButton({
+ Name = "Visible health",
+	Callback = function()
+      		game.Workspace.Player.LocalPlayer.Character.Humanoid.Health = 99
+game.Players.LocalPlayer.Character.Humanoid.HeathDisplayedDistance = 10000000000000000000000000000000000000000000000000
+end
+})
+local Tab = Window:MakeTab({
+	Name = "Avatar",
+	Icon = "",
+	PremiumOnly = false
+})
+
+   Tab:AddButton({
+ Name = "Netless Bypass",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/DUc29mew", true))()
+end
+})
+
+Tab:AddLabel("Morphs")
+Tab:AddButton({
+ Name = "Be a Wall",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/AY6kA2AV", true))()
+end
+})
+Tab:AddButton({
+ Name = "Be a chair",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/uN6c86e1", true))()
+end
+})
+Tab:AddButton({
+ Name = "Be a table",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/9kDrHnUd", true))()
+end
+})
+Tab:AddButton({
+ Name = "Be a ball",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/EJskzezp", true))()
+end
+})
+Tab:AddButton({
+ Name = "Spider",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/txsk1LJg", true))()
+end
+})
+Tab:AddLabel("Limbs")
+
+Tab:AddButton({
+ Name = "Long Legs",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/2vbYR75P", true))()
+end
+})
+
+local Tab = Window:MakeTab({
+	Name = "Combat",
+	Icon = "",
+	PremiumOnly = false
+})
+Tab:AddButton({
+ Name = "Fling Gui",
+	Callback = function()
+loadstring(game:HttpGet('https://pastebin.com/raw/r97d7dS0', true))()
+end
+})
+   Tab:AddButton({
+ Name = "ESP",
+	Callback = function()
+loadstring(game:HttpGet'https://ic3w0lf.xyz/rblx/protoesp.lua')()
+end
+})
+Tab:AddButton({
+ Name = "Aimbot",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Exunys/Aimbot-Script/main/Aimbot%20Script.lua", true))()
+end
+})
+Tab:AddButton({
+ Name = "TP Gui",
+	Callback = function()
+loadstring(game:HttpGet("https://gist.githubusercontent.com/DagerFild/b4776075a0d26ef04394133ee6bd2081/raw/0ed51ac94057d2d9a9f00e1b037b9011c76ca54a/tpGUI", true))()
+end
+})
+local Tab = Window:MakeTab({
+	Name = "Animations",
+	Icon = "",
+	PremiumOnly = false
+})
+
+   Tab:AddButton({
+ Name = "Netless Bypass",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/DUc29mew", true))()
+end
+})
+Tab:AddLabel("Animations")
+Tab:AddButton({
+ Name = "R6 Animations",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/qbexdLb3", true))()
+end
+})
+Tab:AddButton({
+ Name = "R15 Animations",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/x9BkBh0m", true))()
+end
+})
+Tab:AddButton({
+ Name = "Take The L",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/VkWkuyzc", true))()
+end
+})
+Tab:AddButton({
+ Name = "Chill",
+	Callback = function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/XmHFdTij"))()
+end
+})
+Tab:AddButton({
+ Name = "Default",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/iXAe7Fub", true))()
+end
+})
+Tab:AddButton({
+ Name = "Meme Dances",
+	Callback = function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/0QfjMKrF"))()
+end
+})
+Tab:AddButton({
+ Name = "Better Meme Dances",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/FV3HLmTH", true))()
+end
+})
+Tab:AddButton({
+ Name = "Retard Dance",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/5ddwJ7tP", true))()
+end
+})
+Tab:AddButton({
+ Name = "Boogie Dance",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/6DzXfYzy", true))()
+end
+})
+Tab:AddButton({
+ Name = ":joy:",
+	Callback = function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/LEAQuKj0"))()
+end
+})
+Tab:AddButton({
+ Name = "Annoy Gui",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/1cHdCvTF"))()
+end
+})
+Tab:AddButton({
+ Name = "Sonic",
+	Callback = function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/SyF5t70A"))()
+end
+})
+Tab:AddButton({
+ Name = "Xester",
+	Callback = function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/RPwyPvEi"))()
+end
+})
+Tab:AddButton({
+ Name = "Dog",
+	Callback = function()
+loadstring(game:HttpGetAsync("https://pastebin.com/8fS6iYmJ"))()
+end
+})
+local Tab = Window:MakeTab({
+	Name = "Hat Scripts",
+	Icon = "",
+	PremiumOnly = false
+})
+Tab:AddButton({
+ Name = "Sniper",
+	Callback = function()
+loadstring(game:HttpGetAsync("https://pastebin.com/6uyKdbd6"))()
+end
+})
+Tab:AddButton({
+ Name = "Minigun",
+	Callback = function()
+loadstring(game:HttpGetAsync("https://pastebin.com/kGA4WWSm"))()
+end
+})
+Tab:AddButton({
+ Name ="Scp Zero Ninety Six",
+	Callback = function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/WHW6WH3R"))()
+end
+})
+Tab:AddButton({
+ Name = "Blue Epic Sword",
+	Callback = function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/eEaybFj9"))()
+end
+})
+Tab:AddButton({
+ Name = "Yellow Epic Sword",
+	Callback = function()
+loadstring(game:HttpGetAsync("https://pastebin.com/raw/gYQtLsE2"))()
+end
+})
+local Tab = Window:MakeTab({
+	Name = "Admin",
+	Icon = "",
+	PremiumOnly = false
+})
+Tab:AddButton({
+ Name = "Infinity Yield",
+	Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+end
+})
+Tab:AddButton({
+ Name = "CMD-X",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+end
+})
+Tab:AddButton({
+ Name = "Reviz Admin",
+	Callback = function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/KNUzQPYS'),true))()
+end
+})
+Tab:AddButton({
+ Name = "Homebrew Admin",
+	Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/mgamingpro/HomebrewAdmin/master/Main'),true))()
+end
+})
+Tab:AddButton({
+ Name = "Fates Admin",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))
+end
+})
+Tab:AddButton({
+ Name = "Shattervast",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/kRJnwPRG"))()
+end
+})
+local Tab = Window:MakeTab({
+	Name = "Hubs",
+	Icon = "",
+	PremiumOnly = false
+})
+Tab:AddButton({
+ Name = "Owl Hub",
+	Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt'))()
+end
+})
+
+Tab:AddButton({
+ Name = "Dark Hub",
+	Callback = function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/RandomAdamYT/DarkHub/master/Init'), true))()
+end
+})
+
+Tab:AddButton({
+ Name = "Solaris",
+	Callback = function()
+loadstring(game:HttpGet('https://solarishub.dev/script.lua',true))()
+end
+})
+
+Tab:AddButton({
+ Name = "Domain X (Nice Hub)",
+	Callback = function()
+loadstring(game:HttpGet('https://shlex.dev/release/domainx/latest.lua',true))()
+end
+})
+
+Tab:AddButton({
+ Name = "VG Hub",
+	Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/1201for/V.G-Hub/main/V.Ghub'))()
+end
+})
+local Tab = Window:MakeTab({
+	Name = "Utility",
+	Icon = "",
+	PremiumOnly = false
+})
+Tab:AddLabel("Game")
+Tab:AddButton({
+ Name = "TP Gui",
+	Callback = function()
+loadstring(game:HttpGet("https://gist.githubusercontent.com/DagerFild/b4776075a0d26ef04394133ee6bd2081/raw/0ed51ac94057d2d9a9f00e1b037b9011c76ca54a/tpGUI", true))()
+end
+})
+Tab:AddLabel("Reanimate")
+   Tab:AddButton({
+ Name = "Netless Bypass",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/DUc29mew", true))()
+end
+})
+   Tab:AddButton({
+ Name = "Reanimate Script",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/c5VxYv4p"))()
+end
+})
+
+   Tab:AddButton({
+ Name = "Death/Reset",
+	Callback = function()
+ game.Players.LocalPlayer.Character.Humanoid.Health = 0
+end
+})
+Tab:AddLabel("Development")
+ Tab:AddButton({
+ Name = "Dex Explorer",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/jxZELQUn", true))()
+end
+})
+
+   Tab:AddButton({
+ Name = "Remote Spy",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/7GmZyarT", true))()
+end
+})
+
+
+
+
+
+
+
